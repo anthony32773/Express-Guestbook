@@ -1,0 +1,26 @@
+{
+  "name": "express-guestbook",
+  "version": "1.0.0",
+  "description": "Express Guestbook From chapter 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthony32773/Express-Guestbook.git"
+  },
+  "author": "Anthony Di Rito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anthony32773/Express-Guestbook/issues"
+  },
+  "homepage": "https://github.com/anthony32773/Express-Guestbook#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.2",
+    "ejs-lint": "^1.1.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}

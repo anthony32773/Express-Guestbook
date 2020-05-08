@@ -1,0 +1,19 @@
+<%- include("header"); -%>
+<% if (entries.length) { %>
+    <% for (var i = 0 ; i < entries.length ; i++) { %>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="text-muted pull-right">
+                    <%= entries[i].published %>
+                </div>
+                <%= entries[i].title %>
+            </div>
+            <div class="panel-body">
+                <%= entries[i].body %>
+            </div>
+        </div>
+    <% } %>
+<% } else { %>
+    No Entries! <a href="/new-entry">Add One!</a>
+<% } %>
+<%- include("footer"); -%>
