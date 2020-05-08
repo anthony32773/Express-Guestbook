@@ -33,7 +33,6 @@ app.post("/new-entry", function(request, response)
         response.status(400).send("Entries must have a title and body");
         return;
     }
-    console.log("Made it");
     entries.push(
         {
             title: request.body.title,
@@ -41,7 +40,6 @@ app.post("/new-entry", function(request, response)
             published: new Date()
         }
     );
-    console.log(entries[0]);
     response.redirect("/");
 });
 
